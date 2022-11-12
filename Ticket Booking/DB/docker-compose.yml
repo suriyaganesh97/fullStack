@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  # Install Source MySQL DB and setup the ticket DB
+  mysql-1:
+    image: mysql
+    ports:
+      - 3307:3308
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: ticketdb
+      allowPublicKeyRetrieval: True
+
