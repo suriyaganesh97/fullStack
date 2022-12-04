@@ -8,23 +8,37 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { Routes,RouterModule } from '@angular/router';
 import { IntroComponent } from './intro/intro.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
+import { EducationComponent } from './education/education.component';
+import { ContactComponent } from './contact/contact.component';
 const appRoutes: Routes = [
   {path:'', component: HomepageComponent},
-  {path:'users', component: IntroComponent},
+  {path:'intro', component: IntroComponent},
   {path:'servers', component: ExperienceComponent},
 ];
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomepageComponent,
+        HeaderComponent,
+        IntroComponent,
+        AboutComponent,
+        ExperienceComponent,
+        ProjectsComponent,
+        SkillsComponent,
+        EducationComponent,
+        ContactComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        RouterModule.forRoot(appRoutes),
+    ]
 })
 export class AppModule { }
