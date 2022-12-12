@@ -27,8 +27,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Education</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+          <li class="nav-item" id="contactpage">
+            <a class="nav-link" href="#contact" (click)="scrollPointContact(contactpage)">Contact</a>
           </li>
           
           
@@ -38,3 +38,13 @@
       </div>
     </div>
   </nav>
+
+<app-intro></app-intro>
+<app-about></app-about>
+<app-experience></app-experience>
+<app-projects></app-projects>
+<app-skills></app-skills>
+<app-education></app-education>
+  <div #contactpage>
+  <app-contact></app-contact>
+</div>
