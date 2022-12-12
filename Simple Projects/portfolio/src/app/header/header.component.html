@@ -10,41 +10,58 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" [ngClass]="{'text-white':isActive=='home'}" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#item">About</a>
+            <a class="nav-link" href="#about" [ngClass]="{'text-white':isActive=='about'}" (click)="scrollPointAbout(aboutpage)">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#experience" [ngClass]="{'text-white':isActive=='experience'}" (click)="scrollPointExperience(experiencepage)">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects" [ngClass]="{'text-white':isActive=='projects'}" (click)="scrollPointProjects(projectspage)">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills" [ngClass]="{'text-white':isActive=='skills'}" (click)="scrollPointSkills(skillspage)">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link" href="#education" [ngClass]="{'text-white':isActive=='education'}" (click)="scrollPointEducation(educationpage)">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies" [ngClass]="{'text-white':isActive=='hobbies'}" (click)="scrollPointHobbies(hobbiespage)">Hobbies</a>
           </li>
           <li class="nav-item" id="contactpage">
-            <a class="nav-link" href="#contact" (click)="scrollPointContact(contactpage)">Contact</a>
+            <a class="nav-link" href="#contact" [ngClass]="{'text-white':isActive=='contact'}" (click)="scrollPointContact(contactpage)">Contact</a>
           </li>
-          
-          
-         
         </ul>
        
       </div>
     </div>
   </nav>
-
+<!-- intro is the home page -->
 <app-intro></app-intro>
-<app-about></app-about>
-<app-experience></app-experience>
-<app-projects></app-projects>
-<app-skills></app-skills>
-<app-education></app-education>
+<div #aboutpage>
+  <app-about></app-about>
+</div>
+<div #experiencepage>
+  <app-experience></app-experience>
+</div>
+
+<div #projectspage>
+  <app-projects></app-projects>
+</div>
+
+<div #skillspage>
+  <app-skills></app-skills>
+</div>
+
+<div #educationpage>
+  <app-education></app-education>
+</div>
+<div #hobbiespage>
+  <app-hobbies></app-hobbies>
+</div>
+
   <div #contactpage>
   <app-contact></app-contact>
 </div>

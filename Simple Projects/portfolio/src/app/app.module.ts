@@ -14,6 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 const appRoutes: Routes = [
   {path:'', component: HomepageComponent},
   {path:'intro', component: IntroComponent},
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
         ProjectsComponent,
         SkillsComponent,
         EducationComponent,
-        ContactComponent
+        ContactComponent,
+        HobbiesComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
