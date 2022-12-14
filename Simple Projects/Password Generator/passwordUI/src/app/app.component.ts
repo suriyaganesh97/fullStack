@@ -25,4 +25,18 @@ export class AppComponent {
       error: (e) => console.error(e)
     });
   }
+
+  callexternal(){
+    const data={
+      name:'osama'
+    }
+    this.apiService.externalURL(data)
+    .subscribe({
+      next: (res) => {
+        console.log(res);
+        this.password=res;
+      },
+      error: (e) => console.error(e)
+    });
+  }
 }

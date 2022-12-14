@@ -1,13 +1,20 @@
 .container_image{
     justify-content: center;
     display: flex;
-    padding: 40px 10px 40px 10px;
-    margin: 0px 0px 40px 0px;
+    height: 360px;
+    padding: 40px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
     // background-image: url(../../assets/motivational_3.jpg);
     background-color: #cad6d6;
 }
 .content_center{
+    color: #b6350d;
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
     text-align: center;
+    justify-content: center;
+    background-color: #cad6d6;
 }
 .css-shadow {
     width: 300px;
