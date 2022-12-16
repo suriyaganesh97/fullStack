@@ -15,6 +15,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 const appRoutes: Routes = [
   {path:'', component: HomepageComponent},
   {path:'intro', component: IntroComponent},
@@ -36,11 +39,14 @@ const appRoutes: Routes = [
     ],
     providers: [],
     bootstrap: [AppComponent],
+    schemas: [NO_ERRORS_SCHEMA],
     imports: [
         BrowserModule,
         AppRoutingModule,
         NgbModule,
         RouterModule.forRoot(appRoutes),
+        BrowserAnimationsModule,
+        
     ]
 })
 export class AppModule { }
