@@ -1,0 +1,42 @@
+
+.timeline-with-icons {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline-with-icons .timeline-item {
+    position: relative;
+    color: rgb(6, 90, 6);
+  }
+  
+  .timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    color: hsl(217, 88.8%, 35.1%);
+  }
+  
+  .timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .experience{
+    margin-left: 110px;
+    margin-right: 50px;
+  }
+  .work_title{
+    color: #b6350d;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+  }
