@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './homepage/homepage.component';
 import { Routes,RouterModule } from '@angular/router';
 import { IntroComponent } from './intro/intro.component';
@@ -17,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 const appRoutes: Routes = [
   {path:'', component: HomepageComponent},
@@ -43,10 +43,8 @@ const appRoutes: Routes = [
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgbModule,
         RouterModule.forRoot(appRoutes),
         BrowserAnimationsModule,
-        
     ]
 })
 export class AppModule { }
