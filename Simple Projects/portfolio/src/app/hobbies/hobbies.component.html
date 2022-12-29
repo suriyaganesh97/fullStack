@@ -1,3 +1,33 @@
-<!-- <mat-carousel>
-    ...
-  </mat-carousel> -->
+<p class="hobbies_title"> Hobbies </p>
+<div class="container-fluid">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img src="../../assets/chess.jpg" width="1200px" height="600px" style="margin-left: 50px; margin-right: 50px;" alt="Random first slide">
+      </div>
+      <div class="carousel-caption chess">
+        <h3>Chess</h3>
+        <p> Learned Chess professionally and participated in Multiple Tournaments </p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img src="../../assets/cricket-bat-ball.jpg" width="1200px" height="600px" style="margin-left: 50px; margin-right: 50px;" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Cricket</h3>
+        <p> Avid fan of Cricket </p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img src="../../assets/scenary.jpg" width="1200px" height="600px" style="margin-left: 50px; margin-right: 50px;" alt="Random third slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Photography</h3>
+        <p>Interested in Photography. p.s This photo was NOT taken by me</p>
+      </div>
+    </ng-template>
+   
+  </ngb-carousel>
+  </div>

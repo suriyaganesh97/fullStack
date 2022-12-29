@@ -16,7 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 const appRoutes: Routes = [
   {path:'', component: HomepageComponent},
@@ -45,6 +46,7 @@ const appRoutes: Routes = [
         AppRoutingModule,
         RouterModule.forRoot(appRoutes),
         BrowserAnimationsModule,
+        NgbModule
     ]
 })
 export class AppModule { }
