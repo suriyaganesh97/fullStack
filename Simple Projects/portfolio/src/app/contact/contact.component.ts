@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import 'bootstrap';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
