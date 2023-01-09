@@ -1,9 +1,15 @@
 .card_align{
-    margin-left: 50px;
+    margin:0 4% 50px 2%;
 }
 
+@media only screen and (max-width: 600px) {
+    .card_align {
+        margin:0 0% 50px 10%;
+    }
+  }
+
 .container{
-    margin: 0px 150px 0px 200px;
+    margin: 0px 20% 0px 10%;
 }
 
 .card-img-top_align{
@@ -18,7 +24,7 @@
     font-weight: 700;
     text-align: center;
     justify-content: center;
-    margin-right: 220px;
+    margin: 0 40% 0 30%;
   }
 
  

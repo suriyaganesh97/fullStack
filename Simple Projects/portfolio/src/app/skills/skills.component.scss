@@ -7,7 +7,17 @@
     // margin-right: 220px;
   }
 .skills_page{
-  margin: 50px 150px 0px 200px;
+  margin: 50px 50px 0px 50px;
+}
+@media only screen and (max-width: 600px) {
+  .skills_page {
+      margin:0 0% 50px 25%;
+  }
+  .skills_title{
+    margin:0 45% 50px 20%;
+    text-align: left;
+    justify-content: left;
+  }
 }
 
 .individual_card{
