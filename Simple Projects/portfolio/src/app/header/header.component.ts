@@ -8,6 +8,7 @@ import { Component,OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit{
 
   isActive:String | undefined;
+  isCollapsed = false;
   ngOnInit() {
     this.isActive='home';
     

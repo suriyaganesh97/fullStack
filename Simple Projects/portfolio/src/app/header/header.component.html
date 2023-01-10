@@ -1,24 +1,19 @@
 
- <nav class="navbar navbar-expand-sm navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <h3>Suriya's Portfolio</h3>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" [ngClass]="{'text-white':isActive=='home'}" href="#">Home</a>
-          </li>
-          <li class="nav-item">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><h3>Suriya's Portfolio</h3></a>
+    <button class="navbar-toggler btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
             <a class="nav-link" href="#about" [ngClass]="{'text-white':isActive=='about'}" (click)="scrollPointAbout(aboutpage)">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#experience" [ngClass]="{'text-white':isActive=='experience'}" (click)="scrollPointExperience(experiencepage)">Experience</a>
           </li>
-          <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="#projects" [ngClass]="{'text-white':isActive=='projects'}" (click)="scrollPointProjects(projectspage)">Projects</a>
           </li>
           <li class="nav-item">
@@ -33,12 +28,13 @@
           <li class="nav-item" id="contactpage">
             <a class="nav-link" href="#contact" [ngClass]="{'text-white':isActive=='contact'}" (click)="scrollPointContact(contactpage)">Contact</a>
           </li>
-        </ul>
-       
-      </div>
+      </ul>
+      
     </div>
-  </nav> 
+  </nav>
 
+
+  
 
 
 <!-- intro is top section-->
