@@ -4,9 +4,7 @@
     height: 400px;
     padding: 40px 10px 0px 10px;
     margin: 0px 0px 0px 0px;
-    // background-image: url(../../assets/motivational_3.jpg);
-    background-color: #a199ee;
-  //  background-color: #cad6d6;  
+    background-color: #a199ee; 
 }
 .content_center{
     color: #b6350d;
@@ -19,10 +17,72 @@
     padding-bottom: 100px;
 }
 .css-shadow {
-    width: 300px;
-    height: 300px;
+    position:relative;
+    right: 180px;
+    width: 310px;
+    height: 310px;
+    top: 18px;
+    z-index: 1;
     align-content: center;
     border-radius: 50%;
-    border: 2px solid #d14a21;
+    // border: 10px solid #a199ee;
     filter: drop-shadow(0 0 8px #ca9484);
   }
+
+.loader {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    left:150px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #a199ee;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+    animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+}
+
+.loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.loader span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.loader span:nth-child(4) {
+    filter: blur(50px);
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #a199ee;
+    border: solid rgb(255, 255, 255) 10px;
+    border-radius: 50%;
+}
