@@ -4,6 +4,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### db dump ###
+/data/
+
+
 ### STS ###
 .apt_generated
 .classpath
