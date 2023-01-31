@@ -7,7 +7,7 @@ const baseUrl = 'http://localhost:8080';
 })
 export class LoginServiceService {
   constructor(private http: HttpClient) { }
-  login(params: any): Observable<any> {
-    return this.http.get<any>(`${baseUrl}/login`, { params });
+  login(data: any): Observable<any> {
+    return this.http.post<any>(`${baseUrl}/login`,  data );
   }
 }
